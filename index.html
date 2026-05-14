@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+        Sab kuch ek jagah jaano — bilkul free.
+      </p>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyLoanScan</title>
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Loan app ka naam likho... (e.g. KreditBee, mPokket)"
+        />
+        <button onclick="scanLoan()">Check Karo</button>
+      </div>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+      <p class="badge">✓ RBI Data Based</p>
 
-<body>
+      <div class="stats">
+        <div class="stat-card">
+          <h3>120+</h3>
+          <p>Apps Verified</p>
+        </div>
+        <div class="stat-card">
+          <h3>38</h3>
+          <p>Suspicious Apps</p>
+        </div>
+        <div class="stat-card">
+          <h3>24</h3>
+          <p>Confirmed Fake</p>
+        </div>
+        <div class="stat-card">
+          <h3>58</h3>
+          <p>RBI Licensed</p>
+        </div>
+      </div>
 
-  <div class="container">
-
-    <h1>MyLoanScan 🔍</h1>
-
-    <p class="tagline">
-      Check if your loan app or website is Safe, Risky or Fake
-    </p>
-
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Enter loan app name">
-      <button onclick="scanLoan()">Scan</button>
+      <div id="result"></div>
     </div>
+  </header>
 
-    <div id="result"></div>
+  <!-- RED FLAGS SECTION -->
+  <section class="section">
+    <div class="container">
+      <h2>🚨 Fake Loan App Ki Nishaniyan</h2>
+      <div class="features-grid">
+        <div class="feature-card">Play Store pe available nahi</div>
+        <div class="feature-card">Loan se pehle fees maangna</div>
+        <div class="feature-card">Contacts access maangna</div>
+        <div class="feature-card">No physical office address</div>
+        <div class="feature-card">RBI registration nahi</div>
+        <div class="feature-card">Bahut zyada interest rate</div>
+      </div>
+    </div>
+  </section>
 
-  </div>
+  <!-- HOW TO VERIFY -->
+  <section class="section alt-bg">
+    <div class="container">
+      <h2>🔍 Loan App Ko Kaise Verify Karein?</h2>
+      <ol class="steps">
+        <li>RBI NBFC list me naam check karo.</li>
+        <li>Play Store/App Store listing verify karo.</li>
+        <li>NBFC partner ka naam dekho.</li>
+        <li>Interest rate clearly disclosed hai ya nahi.</li>
+        <li>Privacy Policy aur Terms padho.</li>
+        <li>User reviews aur complaints check karo.</li>
+        <li>Customer support details verify karo.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Disclaimer: Yahan di gayi information publicly available sources aur
+        user reports par based hai. Loan lene se pehle khud verify karein.
+      </p>
+      <p>© 2026 MyLoanScan</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
